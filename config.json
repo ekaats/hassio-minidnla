@@ -4,6 +4,7 @@
   "slug": "hassio_minidnla",
   "description": "MiniDNLA is a small DNLA server",
   "startup": "before",
+  "url": "https://github.com/ekaats/hassio-minidnla",
   "boot": "auto",
   "options": {},
   "schema": {}
