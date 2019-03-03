@@ -1,16 +1,12 @@
 {
-  "name": "minidnla for Hass.io",
+  "name": "uPNP_speaker for Hass.io",
   "version": "0.1",
-  "slug": "hassio_minidnla",
-  "description": "MiniDNLA is a small DNLA server",
+  "slug": "hassio_uPNP_speaker",
+  "description": "uPNP speaker is a based on gstreamer renderer",
   "startup": "before",
-  "url": "https://github.com/ekaats/hassio-minidnla",
+  "url": "https://github.com/ekaats/hassio-upnp_speaker",
   "boot": "auto",
   "options": {},
   "schema": {},
-  "ports": {
-    "1900/udp": 1900,
-    "8200/tcp": 8200
-  },
   "host_network": "true",
 }
