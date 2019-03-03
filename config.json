@@ -1,11 +1,10 @@
 {
-  "name": "uPNP_speaker for Hass.io",
+  "name": "uPnP speaker",
   "version": "0.1",
-  "slug": "upnpspeaker",
-  "description": "uPNP speaker is a based on gstreamer renderer",
+  "slug": "upnp_speaker",
+  "description": "uPnP speaker based on gmrender",
   "startup": "before",
-  "url": "https://github.com/ekaats/hassio-upnp_speaker",
   "boot": "auto",
   "options": {},
-  "schema": {},
+  "schema": {}
 }
