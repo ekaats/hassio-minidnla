@@ -2,15 +2,15 @@
 
 set -e
 
-> /etc/minidlna.conf
+> /etc/upnp_speaker.conf
 for VAR in `env`; do
     if [[ $VAR =~ ^MINIDLNA_ ]]; then
-        minidlna_name=`echo "$VAR" | sed -r "s/MINIDLNA_(.*)=.*/\1/g" | tr '[:upper:]' '[:lower:]'`
-        minidlna_value=`echo "$VAR" | sed -r "s/.*=(.*)/\1/g"`
-        echo "${minidlna_name}=${minidlna_value}" >> /etc/minidlna.conf
+        upnp_speaker_name=`echo "$VAR" | sed -r "s/UPNP_SPEAKER_(.*)=.*/\1/g" | tr '[:upper:]' '[:lower:]'`
+        upnp_speaker_value=`echo "$VAR" | sed -r "s/.*=(.*)/\1/g"`
+        echo "${minidlna_name}=${upnp_speaker_value}" >> /etc/upnp_speaker.conf
     fi
 done
 
-[ -f /var/run/minidlna/minidlna.pid ] && rm -f /var/run/minidlna/minidlna.pid
+[ -f /var/run/upnp_speaker/minidlna.pid ] && rm -f /var/run/upnp_speaker/upnp_speaker.pid
 
-exec minidlnad -d $@
+exec upnp_speaker -d $@
