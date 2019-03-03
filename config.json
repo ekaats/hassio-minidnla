@@ -7,5 +7,8 @@
   "url": "https://github.com/ekaats/hassio-minidnla",
   "boot": "auto",
   "options": {},
-  "schema": {}
+  "schema": {},
+  "ports": {
+    "8200/tcp": 8200
+  }
 }
