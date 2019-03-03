@@ -1,0 +1,10 @@
+{
+  "name": "minidnla for Hass.io",
+  "version": "0.1",
+  "slug": "hassio_minidnla",
+  "description": "MiniDNLA is a small DNLA server",
+  "startup": "before",
+  "boot": "auto",
+  "options": {},
+  "schema": {}
+}
