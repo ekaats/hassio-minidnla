@@ -6,7 +6,7 @@ ENV UPNP_SPEAKER_VERSION=0.1
 
 RUN apk update && \
     apk upgrade && \
-    apk add --no-cache gmrender-resurrect &&
+    apk add --no-cache gmrender-resurrect && \
     rm -rf /var/cache/apk/*
 
 # Copy data for add-on
