@@ -4,7 +4,7 @@
   "slug": "hassio_upnp_speaker",
   "description": "uPNP speaker is a based on gstreamer renderer",
   "startup": "before",
-  "url": "https://github.com/ekaats/hassio-upnp_speaker/",
+  "url": "https://github.com/ekaats/hassio-upnp_speaker",
   "boot": "auto",
   "options": {},
   "schema": {},
