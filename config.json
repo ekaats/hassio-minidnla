@@ -5,6 +5,7 @@
   "description": "uPnP speaker based on gmrender",
   "startup": "before",
   "boot": "auto",
+  "audio": "true",
   "options": {},
   "schema": {}
 }
