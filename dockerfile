@@ -6,7 +6,7 @@ ENV MINIDNLA_VERSION=0.1
 
 RUN apk update && \
     apk upgrade && \
-    apk add --no-cache bash minidlna && \
+    apk add --no-cache bash gmrender-resurrect && \
     rm -rf /var/cache/apk/*
 
 # Copy data for add-on
